@@ -17,7 +17,8 @@ main.main-article {
 }
 
 section {
-  margin: 0 0 85px;
+  margin: 0 auto 85px;
+  max-width: 1200px;
 }
 
 h1 {
@@ -110,7 +111,10 @@ header.article-header {
 
 nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto 0;
+  max-width: 1200px;
 }
 
 header nav a {
@@ -122,18 +126,15 @@ nav a:hover{
 }
 
 header nav a:first-child {
-  margin-left: 120px;
+  margin-left: 0;
   margin-right: auto;
-}
-
-header nav a:last-child {
-  margin-right: 121px;
 }
 
 /* Карточки статей */
 
 .articles {
   position: relative;
+  margin: 0 auto 85px;
 }
 
 .articles-title {
@@ -297,10 +298,8 @@ select {
 /* Форма */
 
 .contact {
-
   padding: 0 102px;
   margin: 0 auto 81px;
-  max-width: 1200px;
 }
 
 .contact-form {
@@ -388,6 +387,7 @@ article {
   font-size: 16px;
   line-height: 26px;
   vertical-align: middle;
+  max-width: 998px;
 }
 
 .article-meta {
@@ -573,19 +573,13 @@ footer {
 
 footer nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin: 0 auto 0;
+  max-width: 631px;
 }
 
 footer nav a {
-  margin: 0 auto 0;
-}
-
-footer nav a:first-of-type {
-  margin-left: 405px;
-}
-
-footer nav a:last-of-type {
-  margin-right: 404px;
+  margin: 0;
 }
 
