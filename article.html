@@ -84,9 +84,10 @@
             <div class="flex-col">
               <input class="comment-form-name" placeholder="Имя" required>
               <input class="comment-form-email" type="email" placeholder="Почта" required>
-              <button type="submit" class="button" required>Отправить</button>
+              <button type="submit" class="button contact-submit" required>Отправить</button>
             </div>
             <textarea class="comment-form-text" placeholder="Написать комментарий..." rows="7" minlength="10" maxlength="200" required></textarea>
+            <div class="text-counter hidden"><output class="char-counter">0</output>/200</span>
         </form>
       </section>
     </main>
@@ -101,6 +102,7 @@
 
     <script src="js/likes.js"></script>
     <script src="js/comments.js"></script>
+    <script src="js/char-counter.js"></script>
 
   </body>
 </html>
