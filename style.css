@@ -304,6 +304,7 @@ select {
 }
 
 .contact-form {
+  position: relative;
   background: url("img/form-bckg.png") no-repeat;
   background-position: center;
   padding: 53px 81px 62px;
