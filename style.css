@@ -297,14 +297,15 @@ select {
 /* Форма */
 
 .contact {
+
   padding: 0 102px;
-  margin-bottom: 81px;
+  margin: 0 auto 81px;
+  max-width: 1200px;
 }
 
 .contact-form {
-  position: relative;
   background: url("img/form-bckg.png") no-repeat;
-  background-origin: border-box;
+  background-position: center;
   padding: 53px 81px 62px;
   box-sizing: border-box;
 }
@@ -526,6 +527,7 @@ li:last-child {
 
 .comments-form {
   margin-left: 81px;
+  max-width: 793px;
 }
 
 .comments-form input {
