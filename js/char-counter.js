@@ -4,18 +4,18 @@
 // при вводе меньше минимума текст подсвечивается красным, и блокируется кнопка отправки. 
 // На ввод больше максимума уже стоит ограничение в атрибуте элемента.
 
-let emailText = document.querySelector('.email-text');
+let messageText = document.querySelector('textarea');
 let charCounter = document.querySelector('.char-counter');
-let contactForm = document.querySelector('.contact-form');
+let contactForm = document.querySelector('form');
 let contactSubmit = document.querySelector('.contact-submit');
 
-emailText.oninput = function () {
-  charCounter.textContent = emailText.value.length;
-  if (emailText.value.length < 10) {
-    emailText.style.color = 'red';
+messageText.oninput = function () {
+  charCounter.textContent = messageText.value.length;
+  if (messageText.value.length < 10) {
+    messageText.style.color = 'red';
     contactSubmit.disabled = true;
   } else {
-    emailText.style.color = '#202117';
+    messageText.style.color = '#202117';
     contactSubmit.disabled = false;
   }
 }
